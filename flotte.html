@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the premium car rental fleet of Al Faissal Drive in Agadir. Economy, SUVs, and Luxury vehicles available.">
+    <title>Our Fleet | Al Faissal Drive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Al Faissal <span>Drive</span></a>
+            <nav id="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="flotte.html">Our Fleet</a></li>
+                    <li><a href="comment-ca-marche.html">How it Works</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="flotte.html" class="btn btn-primary nav-cta">Book Now</a>
+            <div class="mobile-toggle" id="mobile-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Vehicle Fleet</h1>
+            <p>Find the perfect car for your stay in Agadir.</p>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="fleet-filters">
+                <button class="filter-btn active" data-filter="all">All Cars</button>
+                <button class="filter-btn" data-filter="economy">Economy</button>
+                <button class="filter-btn" data-filter="suv">SUV</button>
+                <button class="filter-btn" data-filter="luxury">Luxury</button>
+            </div>
+
+            <div class="fleet-grid">
+                <div class="car-card economy">
+                    <div class="urgency-badge">Popular</div>
+                    <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800&q=80" alt="Economy Car">
+                    <div class="car-details">
+                        <h3>Renault Clio 5</h3>
+                        <div class="price">€25 <span>/ day</span></div>
+                        <ul class="specs">
+                            <li><i class="fas fa-user"></i> 5 Seats</li>
+                            <li><i class="fas fa-gas-pump"></i> Diesel</li>
+                            <li><i class="fas fa-cog"></i> Manual</li>
+                        </ul>
+                        <button class="btn btn-primary btn-block open-modal" data-car="Renault Clio 5" data-price="25">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="car-card suv">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80" alt="SUV Car">
+                    <div class="car-details">
+                        <h3>Dacia Duster</h3>
+                        <div class="price">€35 <span>/ day</span></div>
+                        <ul class="specs">
+                            <li><i class="fas fa-user"></i> 5 Seats</li>
+                            <li><i class="fas fa-gas-pump"></i> Diesel</li>
+                            <li><i class="fas fa-cog"></i> Manual</li>
+                        </ul>
+                        <button class="btn btn-primary btn-block open-modal" data-car="Dacia Duster" data-price="35">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="car-card luxury">
+                    <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80" alt="Luxury Car">
+                    <div class="car-details">
+                        <h3>Range Rover Evoque</h3>
+                        <div class="price">€80 <span>/ day</span></div>
+                        <ul class="specs">
+                            <li><i class="fas fa-user"></i> 5 Seats</li>
+                            <li><i class="fas fa-gas-pump"></i> Diesel</li>
+                            <li><i class="fas fa-cog"></i> Auto</li>
+                        </ul>
+                        <button class="btn btn-primary btn-block open-modal" data-car="Range Rover Evoque" data-price="80">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Al Faissal Drive. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
