@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://al-faissal-drive.vercel.app/sitemap.xml
