@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta name="google-site-verification" content="tamzaMKkeFHD11eSTPNpzjdege0lvPLK2_49jzujN4w" />
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Al Faissal Drive - Premium Car Rental in Agadir. Location voiture Agadir. Fast, affordable, and reliable car rentals for tourists and business travelers.">
-    <meta name="keywords" content="Car rental Agadir, Location voiture Agadir, rent a car Morocco, Al Faissal Drive">
-    <title>Al Faissal Drive | Car Rental Agadir</title>
+    <meta name="description" content="Al Faissal Drive - Location de voitures premium à Agadir. Rapide, abordable et fiable pour les touristes et les professionnels.">
+    <meta name="keywords" content="Location voiture Agadir, car rental Agadir, rent a car Morocco, Al Faissal Drive, aéroport Agadir">
+    <title>Al Faissal Drive | Location de Voitures à Agadir</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,13 +20,13 @@
             <nav id="navbar">
                 <ul class="nav-links">
                     <li><a href="#home">Accueil</a></li>
-                    <li><a href="#fleet">Our Fleet</a></li>
-                    <li><a href="#how-it-works">How it Works</a></li>
+                    <li><a href="#fleet">Notre Flotte</a></li>
+                    <li><a href="#how-it-works">Comment ça marche</a></li>
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <a href="#fleet" class="btn btn-primary nav-cta">Book Now</a>
+            <a href="#fleet" class="btn btn-primary nav-cta">Réserver</a>
             <div class="mobile-toggle" id="mobile-toggle">
                 <i class="fas fa-bars"></i>
             </div>
@@ -38,23 +36,23 @@
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <h1>Rent Your Car in Agadir <br><span class="arabic-text">بسهولة وثقة</span></h1>
-            <p>Fast, affordable, and reliable rentals for your Moroccan adventure.</p>
+            <h1>Louez votre voiture à Agadir <br><span class="arabic-text">بسهولة وثقة</span></h1>
+            <p>Un service rapide, abordable et fiable pour votre aventure marocaine.</p>
             
             <div class="hero-booking-form">
                 <div class="form-group">
-                    <label>Pick-up Location</label>
-                    <input type="text" value="Agadir City / Airport" disabled>
+                    <label>Lieu de prise en charge</label>
+                    <input type="text" value="Agadir Ville / Aéroport" disabled>
                 </div>
                 <div class="form-group">
-                    <label>Pick-up Date</label>
-                    <input type="date" required>
+                    <label>Date de départ</label>
+                    <input type="date" id="pickup-date" required>
                 </div>
                 <div class="form-group">
-                    <label>Return Date</label>
-                    <input type="date" required>
+                    <label>Date de retour</label>
+                    <input type="date" id="return-date" required>
                 </div>
-                <button class="btn btn-primary btn-block" onclick="window.location.href='#fleet'">Find a Car</button>
+                <button class="btn btn-primary btn-block" onclick="window.location.href='#fleet'">Trouver une voiture</button>
             </div>
         </div>
     </section>
@@ -63,15 +61,15 @@
         <div class="container trust-grid">
             <div class="trust-item">
                 <i class="fas fa-users"></i>
-                <span>Trusted by 1000+ Customers</span>
+                <span>Plus de 1000 clients satisfaits</span>
             </div>
             <div class="trust-item">
                 <i class="fas fa-tags"></i>
-                <span>No Hidden Fees</span>
+                <span>Aucun frais caché</span>
             </div>
             <div class="trust-item">
                 <i class="fas fa-headset"></i>
-                <span>24/7 Local Support</span>
+                <span>Assistance locale 24/7</span>
             </div>
         </div>
     </section>
@@ -79,141 +77,145 @@
     <section id="fleet" class="section-padding bg-light">
         <div class="container">
             <div class="section-title">
-                <h2>Our Featured Fleet</h2>
-                <p>Choose from our well-maintained vehicles at the best prices in Agadir.</p>
+                <h2>Notre Flotte de Véhicules</h2>
+                <p>Choisissez parmi nos véhicules récents au meilleur prix à Agadir.</p>
             </div>
             
             <div class="fleet-filters">
-                <button class="filter-btn active" data-filter="all">All Cars</button>
-                <button class="filter-btn" data-filter="economy">Economy</button>
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="economy">Économique</button>
                 <button class="filter-btn" data-filter="suv">SUV</button>
-                <button class="filter-btn" data-filter="luxury">Citadine polyvalente</button>
+                <button class="filter-btn" data-filter="citadine">Citadine</button>
             </div>
 
             <div class="fleet-grid">
-                </div><div class="car-card SUV">
-    <div class="urgency-badge">Offre Spéciale</div>
-    <img src="https://admin.kia.ma/storage/images/modeles/Sans_titre-removebg-preview_06082025_121625.webp" alt="SUV car">
-    <div class="car-details">
-        <h3>Kia Sonet</h3>
-        <div class="price">450dhs <span>/ jour</span></div>
-        <ul class="specs">
-            <li><i class="fas fa-user"></i> 5 Places</li>
-            <li><i class="fas fa-gas-pump"></i> Essence</li>
-            <li><i class="fas fa-cog"></i> Manual</li>
-        </ul>
-        <button class="btn btn-primary btn-block open-modal" data-car="Kia Sonet" data-price="450dhs">Réserver</button>
-    </div>
-</div>
-             <div class="car-card Citadine polyvalente">
-    <div class="urgency-badge">Petit prix</div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Dacia_Logan_III_%28cropped%29.jpg" alt="Citadine polyvalente car">
-    <div class="car-details">
-        <h3>Dacia Logan</h3>
-        <div class="price">250dhs <span>/ jour</span></div>
-        <ul class="specs">
-            <li><i class="fas fa-user"></i> 5 Places</li>
-            <li><i class="fas fa-gas-pump"></i> Diesel</li>
-            <li><i class="fas fa-cog"></i> Manual</li>
-        </ul>
-        <button class="btn btn-primary btn-block open-modal" data-car="Dacia Logan" data-price="250dhs">Réserver</button>
-    </div>
-</div>
+                
+                <div class="car-card suv">
+                    <div class="urgency-badge">Offre Spéciale</div>
+                    <img src="https://admin.kia.ma/storage/images/modeles/Sans_titre-removebg-preview_06082025_121625.webp" alt="Kia Sonet SUV">
+                    <div class="car-details">
+                        <h3>Kia Sonet</h3>
+                        <div class="price">450 dhs <span>/ jour</span></div>
+                        <ul class="specs">
+                            <li><i class="fas fa-user"></i> 5 Places</li>
+                            <li><i class="fas fa-gas-pump"></i> Essence</li>
+                            <li><i class="fas fa-cog"></i> Manuelle</li>
+                        </ul>
+                        <button class="btn btn-primary btn-block open-modal" data-car="Kia Sonet" data-price="450 dhs">Réserver</button>
+                    </div>
+                </div>
 
-<div class="car-card Citadine polyvalente">
-    <div class="urgency-badge">Petit prix</div>
-    <img src="https://cdn.group.renault.com/dac/master/dacia-vn/vehicules/sandero/sandero-bi1-ph2/overview/sandero-bi1-ph2-overview-001-desktop.jpg.ximg.largex2.webp/8ae509c8ee.webp" alt="Citadine polyvalente car">
-    <div class="car-details">
-        <h3>Dacia Sandero</h3>
-        <div class="price">250dhs <span>/ jour</span></div>
-        <ul class="specs">
-            <li><i class="fas fa-user"></i> 5 Places</li>
-            <li><i class="fas fa-gas-pump"></i> Diesel</li>
-            <li><i class="fas fa-cog"></i> Manual</li>
-        </ul>
-        <button class="btn btn-primary btn-block open-modal" data-car="Dacia Sandero" data-price="250dhs">Réserver</button>
-    </div>
-</div>
+                <div class="car-card citadine">
+                    <div class="urgency-badge">Petit prix</div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Dacia_Logan_III_%28cropped%29.jpg" alt="Dacia Logan">
+                    <div class="car-details">
+                        <h3>Dacia Logan</h3>
+                        <div class="price">250 dhs <span>/ jour</span></div>
+                        <ul class="specs">
+                            <li><i class="fas fa-user"></i> 5 Places</li>
+                            <li><i class="fas fa-gas-pump"></i> Diesel</li>
+                            <li><i class="fas fa-cog"></i> Manuelle</li>
+                        </ul>
+                        <button class="btn btn-primary btn-block open-modal" data-car="Dacia Logan" data-price="250 dhs">Réserver</button>
+                    </div>
+                </div>
 
-<div class="car-card Citadine polyvalente">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/2020_Peugeot_208_GT_Line_PureTech_1.2_Front.jpg" alt="Citadine polyvalente car">
-    <div class="car-details">
-        <h3>Peugeot 208</h3>
-        <div class="price">300dhs <span>/ jour</span></div>
-        <ul class="specs">
-            <li><i class="fas fa-user"></i> 5 Places</li>
-            <li><i class="fas fa-gas-pump"></i> Diesel</li>
-            <li><i class="fas fa-cog"></i> Manual</li>
-        </ul>
-        <button class="btn btn-primary btn-block open-modal" data-car="Peugeot 208" data-price="300dhs">Réserver</button>
-    </div>
-<div class="car-card economy">
-                    <div class="urgency-badge">Only 2 left!</div>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Renault_Clio_R.S._Line_%28V%29_%E2%80%93_f_17102021.jpg" alt="Economy Car">
+                <div class="car-card citadine">
+                    <div class="urgency-badge">Populaire</div>
+                    <img src="https://cdn.group.renault.com/dac/master/dacia-vn/vehicules/sandero/sandero-bi1-ph2/overview/sandero-bi1-ph2-overview-001-desktop.jpg.ximg.largex2.webp/8ae509c8ee.webp" alt="Dacia Sandero">
+                    <div class="car-details">
+                        <h3>Dacia Sandero</h3>
+                        <div class="price">250 dhs <span>/ jour</span></div>
+                        <ul class="specs">
+                            <li><i class="fas fa-user"></i> 5 Places</li>
+                            <li><i class="fas fa-gas-pump"></i> Diesel</li>
+                            <li><i class="fas fa-cog"></i> Manuelle</li>
+                        </ul>
+                        <button class="btn btn-primary btn-block open-modal" data-car="Dacia Sandero" data-price="250 dhs">Réserver</button>
+                    </div>
+                </div>
+
+                <div class="car-card citadine">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/2020_Peugeot_208_GT_Line_PureTech_1.2_Front.jpg" alt="Peugeot 208">
+                    <div class="car-details">
+                        <h3>Peugeot 208</h3>
+                        <div class="price">300 dhs <span>/ jour</span></div>
+                        <ul class="specs">
+                            <li><i class="fas fa-user"></i> 5 Places</li>
+                            <li><i class="fas fa-gas-pump"></i> Diesel</li>
+                            <li><i class="fas fa-cog"></i> Manuelle</li>
+                        </ul>
+                        <button class="btn btn-primary btn-block open-modal" data-car="Peugeot 208" data-price="300 dhs">Réserver</button>
+                    </div>
+                </div>
+
+                <div class="car-card economy">
+                    <div class="urgency-badge">Plus que 2 !</div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Renault_Clio_R.S._Line_%28V%29_%E2%80%93_f_17102021.jpg" alt="Renault Clio 5">
                     <div class="car-details">
                         <h3>Renault Clio 5</h3>
-                        <div class="price">300dhs <span>/ day</span></div>
+                        <div class="price">300 dhs <span>/ jour</span></div>
                         <ul class="specs">
-                            <li><i class="fas fa-user"></i> 5 Seats</li>
+                            <li><i class="fas fa-user"></i> 5 Places</li>
                             <li><i class="fas fa-gas-pump"></i> Diesel</li>
-                            <li><i class="fas fa-cog"></i> Manual</li>
+                            <li><i class="fas fa-cog"></i> Manuelle</li>
                         </ul>
-                        <button class="btn btn-primary btn-block open-modal" data-car="Renault Clio 5" data-price="300dhs">Book Now</button>
+                        <button class="btn btn-primary btn-block open-modal" data-car="Renault Clio 5" data-price="300 dhs">Réserver</button>
                     </div>
                 </div>
 
-                <div class="car-card SUV">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Dacia_Duster_TCe_130_Extreme_%28III%29_%E2%80%93_f_13102024.jpg" alt="SUV car">
+                <div class="car-card suv">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Dacia_Duster_TCe_130_Extreme_%28III%29_%E2%80%93_f_13102024.jpg" alt="Dacia Duster">
                     <div class="car-details">
                         <h3>Dacia Duster</h3>
-                        <div class="price">400dhs <span>/ day</span></div>
+                        <div class="price">400 dhs <span>/ jour</span></div>
                         <ul class="specs">
-                            <li><i class="fas fa-user"></i> 5 Seats</li>
+                            <li><i class="fas fa-user"></i> 5 Places</li>
                             <li><i class="fas fa-gas-pump"></i> Diesel</li>
-                            <li><i class="fas fa-cog"></i> Manual</li>
+                            <li><i class="fas fa-cog"></i> Manuelle</li>
                         </ul>
-                        <button class="btn btn-primary btn-block open-modal" data-car="Dacia Duster" data-price="400dhs">Book Now</button>
+                        <button class="btn btn-primary btn-block open-modal" data-car="Dacia Duster" data-price="400 dhs">Réserver</button>
                     </div>
                 </div>
 
-                <div class="car-card Economy">
-                    <img src="https://maroccarrental.com/wp-content/uploads/2025/04/location-hyundai-accent-casablanca.png.webp" alt="Economy Car">
+                <div class="car-card economy">
+                    <img src="https://maroccarrental.com/wp-content/uploads/2025/04/location-hyundai-accent-casablanca.png.webp" alt="Hyundai Accent">
                     <div class="car-details">
-                        <h3>Hyundai Accent </h3>
-                        <div class="price">300dhs <span>/ day</span></div>
+                        <h3>Hyundai Accent</h3>
+                        <div class="price">300 dhs <span>/ jour</span></div>
                         <ul class="specs">
-                            <li><i class="fas fa-user"></i> 5 Seats</li>
+                            <li><i class="fas fa-user"></i> 5 Places</li>
                             <li><i class="fas fa-gas-pump"></i> Diesel</li>
-                            <li><i class="fas fa-cog"></i> Manual</li>
+                            <li><i class="fas fa-cog"></i> Manuelle</li>
                         </ul>
-                        <button class="btn btn-primary btn-block open-modal" data-car="Hyundai Accent" data-price="300dhs">Book Now</button>
+                        <button class="btn btn-primary btn-block open-modal" data-car="Hyundai Accent" data-price="300 dhs">Réserver</button>
                     </div>
                 </div>
-            </div>
-        </div>
+
+            </div> </div>
     </section>
 
     <section id="how-it-works" class="section-padding">
         <div class="container">
             <div class="section-title">
-                <h2>How It Works</h2>
-                <p>Rent your car in 3 simple steps.</p>
+                <h2>Comment ça marche</h2>
+                <p>Louez votre voiture en 3 étapes simples.</p>
             </div>
             <div class="steps-grid">
                 <div class="step-card">
                     <div class="step-icon"><i class="fas fa-mouse-pointer"></i></div>
-                    <h3>1. Choose Your Car</h3>
-                    <p>Browse our diverse fleet and find the perfect match for your trip.</p>
+                    <h3>1. Choisissez votre voiture</h3>
+                    <p>Parcourez notre flotte et trouvez le véhicule idéal pour votre séjour.</p>
                 </div>
                 <div class="step-card">
                     <div class="step-icon"><i class="fas fa-calendar-check"></i></div>
-                    <h3>2. Book Online</h3>
-                    <p>Fill out our secure, fast booking form with your dates and details.</p>
+                    <h3>2. Réservez en ligne</h3>
+                    <p>Remplissez notre formulaire sécurisé en quelques clics.</p>
                 </div>
                 <div class="step-card">
                     <div class="step-icon"><i class="fas fa-key"></i></div>
-                    <h3>3. Drive & Enjoy</h3>
-                    <p>Pick up your keys in Agadir and start your Moroccan journey.</p>
+                    <h3>3. Prenez le volant</h3>
+                    <p>Récupérez vos clés à Agadir ou à l'aéroport et profitez !</p>
                 </div>
             </div>
         </div>
@@ -222,20 +224,20 @@
     <section id="faq" class="section-padding bg-light">
         <div class="container">
             <div class="section-title">
-                <h2>Frequently Asked Questions</h2>
+                <h2>Questions Fréquentes</h2>
             </div>
             <div class="faq-container">
                 <div class="faq-item">
-                    <div class="faq-question">What documents do I need to rent a car? <i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer"><p>You need a valid driver's license, a passport or ID card, and a credit card in the driver's name for the deposit.</p></div>
+                    <div class="faq-question">Quels documents sont nécessaires ? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Vous avez besoin d'un permis de conduire valide et d'une pièce d'identité (passeport ou CIN).</p></div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Are there mileage limits? <i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer"><p>We offer unlimited mileage on all our rentals so you can explore Morocco freely.</p></div>
+                    <div class="faq-question">Le kilométrage est-il limité ? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Non, nous offrons un kilométrage illimité sur l'ensemble de nos locations.</p></div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Can I pick up the car at Agadir Airport? <i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer"><p>Yes, we offer free delivery and drop-off at Agadir Al Massira Airport for your convenience.</p></div>
+                    <div class="faq-question">Livrez-vous à l'Aéroport d'Agadir ? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Oui, nous proposons la livraison et la récupération gratuites à l'Aéroport Al Massira d'Agadir.</p></div>
                 </div>
             </div>
         </div>
@@ -244,38 +246,38 @@
     <section id="contact" class="section-padding">
         <div class="container">
             <div class="section-title">
-                <h2>Get In Touch</h2>
-                <p>We are here to help you 24/7.</p>
+                <h2>Contactez-nous</h2>
+                <p>Notre équipe est à votre disposition 24/7.</p>
             </div>
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="info-item">
                         <i class="fas fa-phone-alt"></i>
                         <div>
-                            <h4>Call Us</h4>
+                            <h4>Appelez-nous</h4>
                             <a href="tel:0661689659">0661689659</a>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>Email Us</h4>
+                            <h4>Email</h4>
                             <a href="mailto:alfdrive@gmail.com">alfdrive@gmail.com</a>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Location</h4>
-                            <p>Agadir, Morocco</p>
+                            <h4>Adresse</h4>
+                            <p>Agadir, Maroc</p>
                         </div>
                     </div>
                 </div>
                 <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button class="btn btn-primary btn-block">Send Message</button>
+                    <input type="text" placeholder="Votre Nom" required>
+                    <input type="email" placeholder="Votre Email" required>
+                    <textarea placeholder="Votre Message" rows="5" required></textarea>
+                    <button class="btn btn-primary btn-block">Envoyer le message</button>
                 </form>
             </div>
         </div>
@@ -283,50 +285,46 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Al Faissal Drive. All rights reserved.</p>
-            <p class="seo-footer-text">Premium Car Rental Services in Agadir, Morocco.</p>
+            <p>&copy; 2024 Al Faissal Drive. Tous droits réservés.</p>
+            <p class="seo-footer-text">Service de location de voitures premium à Agadir, Maroc.</p>
         </div>
     </footer>
 
-    <a href="https://wa.me/212661689659" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/212661689659" class="whatsapp-float" target="_blank" aria-label="Contact WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
-
-    <div class="mobile-sticky-cta">
-        <a href="#fleet" class="btn btn-primary btn-block">Reserve Your Car Today</a>
-    </div>
 
     <div id="bookingModal" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <h2>Secure Your Booking</h2>
-            <p class="selected-car-text">You are booking: <strong id="modalCarName">Car</strong></p>
+            <h2>Finalisez votre demande</h2>
+            <p class="selected-car-text">Véhicule choisi : <strong id="modalCarName">Voiture</strong></p>
             
             <form id="finalBookingForm" class="modal-form">
                 <div class="form-row">
                     <div class="form-group">
-                        <label>Pick-up Date</label>
-                        <input type="date" required>
+                        <label>Date de départ</label>
+                        <input type="date" id="modal-pickup-date" required>
                     </div>
                     <div class="form-group">
-                        <label>Return Date</label>
-                        <input type="date" required>
+                        <label>Date de retour</label>
+                        <input type="date" id="modal-return-date" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>Full Name</label>
+                    <label>Nom complet</label>
                     <input type="text" required>
                 </div>
                 <div class="form-group">
-                    <label>Phone Number / WhatsApp</label>
+                    <label>Téléphone / WhatsApp</label>
                     <input type="tel" required>
                 </div>
                 <div class="price-summary">
-                    <span>Estimated Daily Rate:</span>
-                    <strong id="modalCarPrice">€0</strong>
+                    <span>Tarif journalier estimé :</span>
+                    <strong id="modalCarPrice">0 dhs</strong>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">Confirm Request</button>
-                <p class="secure-text"><i class="fas fa-lock"></i> Your information is secure. No payment required now.</p>
+                <button type="submit" class="btn btn-primary btn-block">Confirmer la demande</button>
+                <p class="secure-text"><i class="fas fa-lock"></i> Vos données sont sécurisées. Aucun paiement requis maintenant.</p>
             </form>
         </div>
     </div>
