@@ -1,50 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // --- Mobile Navigation Toggle ---
-    const mobileToggle = document.getElementById('mobile-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    mobileToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
+    // 1. Gestion des dates (Empêcher de choisir une date passée)
+    const today = new Date().toISOString().split('T')[0];
+    const dateInputs = document.querySelectorAll('input[type="date"]');
+    dateInputs.forEach(input => {
+        input.setAttribute('min', today);
     });
 
-    // --- Header Background on Scroll ---
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.style.boxShadow = '0 4px 15px rgba(0,0,0,0.1)';
-        } else {
-            header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
-        }
-    });
-
-    // --- FAQ Accordion ---
-    const faqItems = document.querySelectorAll('.faq-question');
-    faqItems.forEach(item => {
-        item.addEventListener('click', () => {
-            const answer = item.nextElementSibling;
-            const icon = item.querySelector('i');
-            
-            if (answer.style.maxHeight) {
-                answer.style.maxHeight = null;
-                answer.style.padding = '0 20px';
-                icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
-            } else {
-                answer.style.maxHeight = answer.scrollHeight + "px";
-                answer.style.padding = '0 20px 20px 20px';
-                icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
-            }
-        });
-    });
-
-    // --- Fleet Filtering ---
+    // 2. Filtres de la Flotte
     const filterBtns = document.querySelectorAll('.filter-btn');
     const carCards = document.querySelectorAll('.car-card');
 
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Remove active class
+            // Retirer la classe active de tous les boutons
             filterBtns.forEach(b => b.classList.remove('active'));
+            // Ajouter au bouton cliqué
             btn.classList.add('active');
 
             const filterValue = btn.getAttribute('data-filter');
@@ -59,33 +30,49 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- High Conversion Booking Modal ---
+    // 3. Gestion de la fenêtre Modale (Popup de réservation)
     const modal = document.getElementById('bookingModal');
     const openModalBtns = document.querySelectorAll('.open-modal');
-    const closeModal = document.querySelector('.close-modal');
+    const closeModalBtn = document.querySelector('.close-modal');
     const modalCarName = document.getElementById('modalCarName');
     const modalCarPrice = document.getElementById('modalCarPrice');
 
     openModalBtns.forEach(btn => {
         btn.addEventListener('click', () => {
+            // Récupérer les données de la voiture depuis le bouton
             const carName = btn.getAttribute('data-car');
             const carPrice = btn.getAttribute('data-price');
             
+            // Mettre à jour le texte dans la modale
             modalCarName.textContent = carName;
-            modalCarPrice.textContent = `€${carPrice}`;
+            modalCarPrice.textContent = carPrice;
+            
+            // Afficher la modale
             modal.style.display = 'flex';
         });
     });
 
-    closeModal.addEventListener('click', () => {
+    // Fermer la modale avec la croix
+    closeModalBtn.addEventListener('click', () => {
         modal.style.display = 'none';
     });
 
+    // Fermer la modale si on clique en dehors du contenu
     window.addEventListener('click', (e) => {
         if (e.target === modal) {
             modal.style.display = 'none';
         }
     });
+
+    // 4. Soumission du formulaire (Simulation pour l'instant)
+    const bookingForm = document.getElementById('finalBookingForm');
+    bookingForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert("Demande envoyée avec succès ! Nous vous contacterons sur WhatsApp rapidement.");
+        modal.style.display = 'none';
+        bookingForm.reset();
+    });
+});
 
    // --- GESTION RÉELLE DES RÉSERVATIONS VIA WHATSAPP ---
 const finalForm = document.getElementById('finalBookingForm');
